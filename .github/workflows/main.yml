@@ -1,0 +1,25 @@
+name: Deploy to Wedos FTP
+
+on:
+  push:
+    tags:
+      - 'deploy-*'
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install FTP deploy action
+      uses: SamKirkland/FTP-Deploy-Action@v5
+
+    - name: FTP deploy
+      with:
+        ftp-server: ftp://294852.w52.wedos.net
+        ftp-username: w294852
+        ftp-password: N8y30:_uM
+        local-dir: ./  # Tento adresář se nahraje na server
+        server-dir: /www/subdom/schema-generator/ # Adresář na serveru, kam se soubory nahrají
