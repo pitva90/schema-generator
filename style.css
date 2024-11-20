@@ -199,6 +199,12 @@ h1 span {
 	border: 1px solid #c0c0c0;
 }
 
+.inputs-wrap .input-item select {
+	padding: 5px 10px;
+  border: 1px solid #c0c0c0;
+  background-color: #fff;
+}
+
 .inputs-wrap .input-item input:focus {
 	outline: none;
 	border-color: #23a08e;
