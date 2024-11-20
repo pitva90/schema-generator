@@ -26,7 +26,7 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "LocalBusiness",
+"@type": "Store",
 "name": "Alza",
 "alternateName": "Alza - obchod",
 "legalName": "Alza.cz a.s.",
