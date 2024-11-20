@@ -75,7 +75,7 @@
 ],
 "offers": [
 {
-"@type": "Offer"
+"@type": "Offer",
 "itemOffered": {
 "@type": "Service",
 "name": "Servis PC"
@@ -83,7 +83,7 @@
 "description": "Cena dle závady"
 },
 {
-"@type": "Offer"
+"@type": "Offer",
 "itemOffered": {
 "@type": "Product",
 "name": "Firemní licence Windows 11"
@@ -91,7 +91,7 @@
 "price": "2999 CZK"
 },
 {
-"@type": "Offer"
+"@type": "Offer",
 "itemOffered": {
 "@type": "Service",
 "name": "Nasrání zeleným alzákem v reklamě"
