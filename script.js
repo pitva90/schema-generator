@@ -548,7 +548,8 @@ function generateOrganizationSchema() {
       result += '\n}';
 
       if(offerPriceFix) {
-        result += ',\n"price": "' + offerPriceFix + ' CZK"';
+        result += ',\n"priceCurrency": "CZK"';
+        result += ',\n"price": "' + offerPriceFix + '"';
       } else if(offerPriceMin || offerPriceMax) {
         result += ',\n"priceSpecification": {\n';
         result += '"@type": "PriceSpecification",\n';

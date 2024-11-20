@@ -88,7 +88,8 @@
 "@type": "Product",
 "name": "Firemní licence Windows 11"
 },
-"price": "2999 CZK"
+"price": "2999",
+"priceCurrency": "CZK"
 },
 {
 "@type": "Offer",
