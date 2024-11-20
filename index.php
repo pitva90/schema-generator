@@ -22,3 +22,181 @@
   </div>
 </body>
 </html>
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "Alza",
+"alternateName": "Alza - obchod",
+"legalName": "Alza.cz a.s.",
+"slogan": "Nazdar pozemšťane!",
+"telephone": "+42012345678",
+"email": "info@alza.cz",
+"foundingDate": "2003",
+"vatID": "CZ27082440",
+"address":{
+"@type":"PostalAddress",
+"streetAddress": "Jankovcova 1522/53",
+"addressRegion": "Praha",
+"postalCode": "17000",
+"addressLocality": "Holešovice",
+"addressCountry": "CZ"
+},
+"image": "https://cdn.alza.cz/images/web-static/eshop-logos/alza_cz.svg",
+"logo": "https://cdn.alza.cz/images/web-static/eshop-logos/alza_cz.svg",
+"url": "https://www.alza.cz/",
+"sameAs": [
+"https://www.facebook.com/alza.cz/",
+"https://www.instagram.com/alza_czsk/",
+"https://www.youtube.com/channel/UC0wtqzWrBA5gL4Jr_QIQTgg",
+"https://x.com/Alzacz"
+],
+"specialty": ["Prodej elektroniky", "Servis PC", "Black Friday Slevy"],
+"paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+"awards": ["Autorizovaný servis Epson", "Autorizovaný prodejce Microsoft", ""],
+"priceRange": "$$",
+"amenityFeature": [
+{
+"@type": "LocationFeatureSpecification",
+"name": "Wi-Fi",
+"value": true
+},
+{
+"@type": "LocationFeatureSpecification",
+"name": "Velkoobchodní ceny",
+"value": true
+},
+{
+"@type": "LocationFeatureSpecification",
+"name": "Alzák do každé rodiny",
+"value": true
+}
+],
+"offers": [
+{
+"@type": "Offer"
+"itemOffered": {
+"@type": "Service",
+"name": "Servis PC"
+},
+"description": "Cena dle závady"
+},
+{
+"@type": "Offer"
+"itemOffered": {
+"@type": "Product",
+"name": "Firemní licence Windows 11"
+},
+"price": "2999 CZK"
+},
+{
+"@type": "Offer"
+"itemOffered": {
+"@type": "Service",
+"name": "Nasrání zeleným alzákem v reklamě"
+},
+"description": "K nezaplacení"
+}
+],
+"location":[
+{
+"@type": "Place",
+"name":"Alza.cz Showroom Brno - střed",
+"address":{
+"@type":"PostalAddress",
+"addressRegion":"Brno",
+"streetAddress":"Skořepka 336/15",
+"addressLocality":"Brno-Střed",
+"postalCode":"60200",
+"addressCountry":"CZ"
+},
+"geo":{
+"@type":"GeoCoordinates",
+"latitude":"49.1926979",
+"longitude":"16.6156361"
+},
+"hasMap":"https://maps.app.goo.gl/rmgL49t3hXAzcaiz5",
+"openingHoursSpecification": [{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+"opens": "08:00",
+"closes": "20:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": ["Sunday"],
+"opens": "09:00",
+"closes": "19:00"
+}
+]
+},
+{
+"@type": "Place",
+"name":"Alza.cz pobočka Brno - Lískovec",
+"address":{
+"@type":"PostalAddress",
+"addressRegion":"Brno",
+"streetAddress":"Netroufalky 770/16",
+"addressLocality":"Bohunice",
+"postalCode":"62500",
+"addressCountry":"CZ"
+},
+"geo":{
+"@type":"GeoCoordinates",
+"latitude":"49.1771347",
+"longitude":"16.564106"
+},
+"hasMap":"https://maps.app.goo.gl/a3yf1pmamiyJCi9KA",
+"openingHoursSpecification": [{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+"opens": "08:00",
+"closes": "20:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": ["Saturday"],
+"opens": "09:00",
+"closes": "20:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": ["Sunday"],
+"opens": "closed",
+"closes": "closed"
+}
+]
+}
+],
+"contactPoint": [
+{
+"@type": "ContactPoint",
+"email": "customer@alza.cz",
+"contactType": "Customer Service",
+"availableLanguage": ["Czech", "Slovak", "English"]
+},
+{
+"@type": "ContactPoint",
+"telephone": "+420123456987",
+"email": "servis@alza.cz",
+"contactType": "Servis",
+"availableLanguage": ["Czech", "Slovak", "English"]
+},
+{
+"@type": "ContactPoint",
+"telephone": "+420123456987",
+"email": "sales@alza.cz",
+"contactType": "Sales",
+"availableLanguage": ["Czech", "Slovak", "English"]
+},
+{
+"@type": "ContactPoint",
+"telephone": "+420123456987",
+"email": "pr@alza.cz",
+"contactType": "Media",
+"availableLanguage": ["Czech", "Slovak", "English"]
+}
+]
+}
+</script>
