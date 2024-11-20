@@ -20,4 +20,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  # Tento adresář se nahraje na server
-        remote-dir: /www/subdom/schema-generator/  # Adresář na serveru, kam se soubory nahrají
+        server-dir: /www/subdom/schema-generator/  # Adresář na serveru, kam se soubory nahrají
