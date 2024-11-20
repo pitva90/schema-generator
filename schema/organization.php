@@ -112,9 +112,13 @@
   <h2 class="group-name">Vlastnosti</h2>
   <div class="inputs-outer-wrap">
     <div class="inputs-wrap">
-      <div class="input-item speciality full-width">
+      <?php /*<div class="input-item speciality full-width">
         <label for="specialty">Specializace (více možností oddělte čárkou)</label>
         <input id="specialty" name="specialty" type="text" placeholder="Diagnostika motoru, Hyundai, Zimní pergoly na míru, ...">
+      </div> */ ?>
+      <div class="input-item description full-width">
+        <label for="description-main">Popis obchodu, firmy, co nabízí, na co zaměřuje, v čem vyniká...</label>
+        <input id="description-main" name="description" type="text">
       </div>
       <div class="input-item payments full-width">
         <label for="paymentAccepted">Možnost platby (více možností oddělte čárkou)</label>
@@ -136,6 +140,7 @@
   </div>
 </div>
 
+<?php /*
 <div id="organization-offers-1" class="group-wrap offer last-group" data-group-index="1">
   <h2 class="group-name">Produkty / Služby #1</h2>
   <div class="inputs-outer-wrap">
@@ -170,6 +175,7 @@
     </div>
   </div>
 </div>
+*/ ?>
 
 <div id="organization-location-1" class="group-wrap location last-group" data-group-index="1">
   <h2 class="group-name">Místo #1</h2>

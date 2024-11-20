@@ -52,10 +52,10 @@
 "https://www.youtube.com/channel/UC0wtqzWrBA5gL4Jr_QIQTgg",
 "https://x.com/Alzacz"
 ],
-"specialty": ["Prodej elektroniky", "Servis PC", "Black Friday Slevy"],
 "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
 "awards": ["Autorizovaný servis Epson", "Autorizovaný prodejce Microsoft", ""],
 "priceRange": "$$",
+"description": "Největší obchod s počítači a elektronikou ✅ Přes 40 prodejen, více než 1 000 Alzaboxů a 15 000 dalších odběrných míst ✅ Elektronika, hračky, domácí pořeby atd.",
 "amenityFeature": [
 {
 "@type": "LocationFeatureSpecification",
@@ -73,33 +73,7 @@
 "value": true
 }
 ],
-"offers": [
-{
-"@type": "Offer",
-"itemOffered": {
-"@type": "Service",
-"name": "Servis PC"
-},
-"description": "Cena dle závady"
-},
-{
-"@type": "Offer",
-"itemOffered": {
-"@type": "Product",
-"name": "Firemní licence Windows 11"
-},
-"price": "2999",
-"priceCurrency": "CZK"
-},
-{
-"@type": "Offer",
-"itemOffered": {
-"@type": "Service",
-"name": "Nasrání zeleným alzákem v reklamě"
-},
-"description": "K nezaplacení"
-}
-],
+
 "location":[
 {
 "@type": "Place",

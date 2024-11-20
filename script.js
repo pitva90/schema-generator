@@ -445,7 +445,7 @@ function generateOrganizationSchema() {
     result += '"sameAs": "' + organizationOtherUrlsArray[0] + '"';
   }
 
-  if($('#organization-info #specialty').val().length > 0) {
+  /*if($('#organization-info #specialty').val().length > 0) {
     let specialty = $('#organization-info #specialty').val().replace(/, /g, ',');
     let specialtyArray = specialty.split(',');
 
@@ -458,7 +458,7 @@ function generateOrganizationSchema() {
     } else {
       result += ',\n"specialty": "' + specialtyArray[0] + '"';
     }
-  }
+  }*/
 
   if($('#organization-info #paymentAccepted').val().length > 0) {
     let paymentAccepted = $('#organization-info #paymentAccepted').val().replace(/, /g, ',');
@@ -484,6 +484,10 @@ function generateOrganizationSchema() {
 
   if($('#organization-info #priceRange').val().length > 0) {
     result += ',\n"priceRange": "' + $('#organization-info #priceRange').val() + '"';
+  }
+
+  if($('#organization-info #description-main').val().length > 0) {
+    result += ',\n"description": "' + $('#organization-info #description-main').val() + '"';
   }
 
   if($('#organization-info #amenityFeature').val().length > 0) {
@@ -513,7 +517,7 @@ function generateOrganizationSchema() {
     }
   }
 
-  $('.group-wrap.offer.listed').each(function(i, e) {
+  /*$('.group-wrap.offer.listed').each(function(i, e) {
 		organizationOffersArray.push({});
 		$(this).find('input, select').each(function(){
 	    if($(this).val().length > 0) {
@@ -565,7 +569,7 @@ function generateOrganizationSchema() {
 	  });
 
 		result += '\n]';
-	};
+	};*/
 
   $('.group-wrap.location').each(function(i, e) {
     const locationGroupId = $(this).attr('data-group-index')
