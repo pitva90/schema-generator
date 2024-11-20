@@ -541,7 +541,7 @@ function generateOrganizationSchema() {
 	      result += ',\n';
 	    }
 			result += '{\n';
-	    result += '"@type": "Offer"\n';
+	    result += '"@type": "Offer",\n';
       result += '"itemOffered": {\n';
       result += '"@type": "'+offerType+'"';
 			result += offerName ? ',\n"name": "' + offerName + '"' : '';
