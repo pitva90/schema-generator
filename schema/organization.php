@@ -74,7 +74,13 @@
       </div>
       <div class="input-item">
         <label for="addressCountry-main">Stát (Kód - 2 nebo 3 znaky)</label>
-        <input id="addressCountry-main" name="addressCountry" type="text" placeholder="CZ, CZE, SK, SVK, ENG, HU, ...">
+        <select name="addressCountry" id="addressCountry-main">
+          <option value="CZ" selected>Česko</option>
+          <option value="SK">Slovensko</option>
+          <option value="DE">Německo</option>
+          <option value="AT">Rakousko</option>
+          <option value="PL">Polsko</option>
+        </select>
       </div>
     </div>
   </div>
@@ -203,7 +209,13 @@
       </div>
       <div class="input-item">
         <label for="addressCountry-1">Stát</label>
-        <input id="addressCountry-1" name="addressCountry" type="text">
+        <select name="addressCountry" id="addressCountry-1">
+          <option value="CZ" selected>Česko</option>
+          <option value="SK">Slovensko</option>
+          <option value="DE">Německo</option>
+          <option value="AT">Rakousko</option>
+          <option value="PL">Polsko</option>
+        </select>
       </div>
       <div class="input-item full-width">
         <label for="hasMap-1">Odkaz na mapu</label>

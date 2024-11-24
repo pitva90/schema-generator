@@ -7,7 +7,7 @@
   <title>Schema.org - Generator</title>
   <link rel="stylesheet" type="text/css" href="style.css?v=0.3">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="script.js?v=0.4"></script>
+  <script src="script.js?v=0.5"></script>
 </head>
 
 <body>
@@ -21,12 +21,11 @@
     </div>
   </div>
 </body>
-</html>
 
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "Store",
+"@type": "LocalBusiness",
 "name": "Alza",
 "alternateName": "Alza - obchod",
 "legalName": "Alza.cz a.s.",
@@ -175,3 +174,4 @@
 ]
 }
 </script>
+</html>

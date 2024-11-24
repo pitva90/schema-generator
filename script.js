@@ -176,6 +176,28 @@ $(document).ready(function(){
 	    console.error('There was a problem with the fetch operation:', error);
 	  });
 	})
+
+	// Najdi všechny skripty typu application/ld+json
+	const jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
+
+	// Pole pro uložení všech nalezených JSON objektů
+	const jsonLdObjects = [];
+
+	// Iterace přes všechny nalezené skripty
+	jsonLdScripts.forEach(script => {
+	  try {
+	    // Parsování JSON obsahu skriptu a přidání do pole
+	    const jsonObject = JSON.parse(script.textContent);
+	    jsonLdObjects.push(jsonObject);
+	  } catch (error) {
+	    console.error("Chyba při parsování JSON-LD:", error);
+	  }
+	});
+
+	const products = jsonLdObjects.filter(obj => obj["@type"] === "LocalBusiness");
+	console.log(products[0]);
+
+
 });
 
 
@@ -367,7 +389,7 @@ function generateOrganizationSchema() {
     });
   }
 
-	$('#organization-address input').each(function(){
+	$('#organization-address input, #organization-address select').each(function(){
     if($(this).val().length > 0) {
       const key = $(this).attr('name');
       const value = $(this).val();
@@ -404,12 +426,12 @@ function generateOrganizationSchema() {
   if(organizationLogoArray.length > 1) {
     result += ',\n';
     result += '"image": "' + organizationLogoArray[0] + '",\n';
-    result += '"logo: [\n';
+    result += '"logo": [\n';
     organizationLogoArray.forEach((element, index) => {
       if(index > 0) {
         result += ',\n';
       }
-      result += element;
+      result += '"' + element + '"';
     });
     result += '\n]';
   } else if (organizationLogoArray.length > 0){
@@ -577,7 +599,7 @@ function generateOrganizationSchema() {
 
     if(locationName.length > 0) {
 			organizationLocationArray.push({info: {}, hours: []});
-      $(this).find('.inputs-outer-wrap > .inputs-wrap > .input-item > input').each(function(){
+      $(this).find('.inputs-outer-wrap > .inputs-wrap > .input-item > input, .inputs-outer-wrap > .inputs-wrap > .input-item > select').each(function(){
         if($(this).val().length > 0) {
           const key = $(this).attr('name');
           const value = $(this).val();
@@ -641,23 +663,23 @@ function generateOrganizationSchema() {
 			if(locationCity) {
         result += ',\n"address":{\n';
         result += '"@type":"PostalAddress"';
-        result += locationCity ? ',\n"addressRegion":"'+ locationCity +'"' : '';
-        result += locationStreet ? ',\n"streetAddress":"'+ locationStreet +'"' : '';
-        result += locationLocality ? ',\n"addressLocality":"'+ locationLocality +'"' : '';
-        result += locationPostalCode ? ',\n"postalCode":"'+ locationPostalCode +'"' : '';
-        result += locationCountry ? ',\n"addressCountry":"'+ locationCountry +'"' : '';
+        result += locationCity ? ',\n"addressRegion": "'+ locationCity +'"' : '';
+        result += locationStreet ? ',\n"streetAddress": "'+ locationStreet +'"' : '';
+        result += locationLocality ? ',\n"addressLocality": "'+ locationLocality +'"' : '';
+        result += locationPostalCode ? ',\n"postalCode": "'+ locationPostalCode +'"' : '';
+        result += locationCountry ? ',\n"addressCountry": "'+ locationCountry +'"' : '';
         result += '\n}';
       }
 
 			if(locationLatitude || locationLongitude) {
         result += ',\n"geo":{\n';
         result += '"@type":"GeoCoordinates"';
-        result += locationLatitude ? ',\n"latitude":"'+ locationLatitude +'"' : '';
-				result += locationLongitude ? ',\n"longitude":"'+ locationLongitude +'"' : '';
+        result += locationLatitude ? ',\n"latitude": "'+ locationLatitude +'"' : '';
+				result += locationLongitude ? ',\n"longitude": "'+ locationLongitude +'"' : '';
         result += '\n}';
       }
 
-			result += locationMap ? ',\n"hasMap":"' + locationMap + '"' : '';
+			result += locationMap ? ',\n"hasMap": "' + locationMap + '"' : '';
 
 
 			if(organizationLocationArray[i]['hours'].length > 0) {
